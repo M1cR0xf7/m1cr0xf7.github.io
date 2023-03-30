@@ -2,15 +2,54 @@ li {
     margin-bottom: .4rem;
 }
 
-
 .subject {
     font-size: 1.4rem;
     font-weight: 600;
     font-family: halvetica;
 }
 
-a { color: #0000FF; }
+body {
+    color: #111;
+}
+
+a {
+    color: #4d648d;
+    text-decoration: underline;
+    background-color: transparent;
+}
+
+a:hover, a:focus {
+    color: #2f496e;
+    text-decoration: underline;
+}
+
 
 footer {
     text-align: center;
+}
+
+
+
+@media (prefers-color-scheme: dark) {
+    body {
+	color: rgb(221, 218, 214);
+	background: rgb(24, 26, 27);
+    }
+
+    footer {
+	color: rgb(204, 200, 193);
+    }
+
+
+    a {
+	color: rgb(153, 184, 212);
+	text-decoration: underline;
+	background-color: transparent;
+    }
+
+    a:hover, a:focus {
+	color: rgb(153, 184, 212);
+	text-decoration: underline;
+    }
+
 }
